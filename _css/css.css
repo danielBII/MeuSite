@@ -1,0 +1,441 @@
+
+/* Fundo do Overlay */
+.overlay {
+    
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Cor do fallback */
+  background-color: rgba(0,0,0, 0.9); /* Opacidade */
+  overflow-x: hidden; /* Desativar rolagem horizontal */
+  transition: 0.5s; /* transição de 5 segundos */
+}
+
+/* Posição do conteúdo dentro da overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px;
+}
+
+/* Posição do botão close */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* Responsividade do overlay */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color:#02090F;
+  
+}
+
+/* Conteúdo */
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 35px;
+  box-sizing:border-box;
+  height: 510px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+  box-sizing:border-box;
+}
+
+.large-font {
+  font-size: 50px;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #5F9EA0;
+}
+
+html, body {
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+#site{
+  position: relative;
+  top:94;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:0;
+  width:100%;
+  background-color:#162533;    
+}
+      
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  width: 100%;
+  background-color:#02090F;
+  height:94px;
+}
+
+/* Menu */
+.menu ul li{
+  background-color:#02090F;
+  float:left;
+  color:black;
+  width:19%;
+  height:40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+.menu ul li:hover{
+  background-color:#27435C;
+  color: black;
+  width:19%;
+}
+
+.menu ul{
+  padding:0;
+}
+
+.menu ul ul{
+  display: none;
+  width:525%; 
+}
+
+.menu ul li:hover > ul{
+  display: block;
+}
+      
+#divBusca{
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color:white;
+  border:solid 1px white;
+  border-radius:15px;
+  width:17.5%;
+  height:32px;
+  float: left;
+}
+       
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:53%;
+  color:;
+}
+       
+#btnBusca{
+  border:none;
+  float:left;
+  height:32px;
+  border-radius:0 15px 15px 0;
+  width:34.8%;
+  font-weight:bold;
+  background:white;
+}
+       
+#divBusca img{
+  background-color:transparent;
+  margin-top: 3px;
+  float:left;
+  width: 12%;
+  height: 80%;
+}
+
+#cabecalho{
+  top: 0;
+  width: 15%;
+  background-color:#02090F;
+  height:94px;
+  float:left;
+}
+
+#cabecalho_2{
+  font-family: Helvetica;
+  top: 0;
+  width: 85%;
+  background-color:#02090F;
+  height:94px;
+  float:right;
+}
+
+#img{
+  margin-top:10px;
+} 
+
+#corpo1{
+  background-color:#0C375C;
+  top:0;
+  width: 100%;
+  height: 200px;  
+}  
+
+a:link { 
+  text-decoration:none; 
+}
+      
+span{
+  color:white;
+}
+
+#titulo{
+  text-shadow:2px 3px 8px #000;
+  font-size: 80px;
+  font-family: arial black;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+h2{
+  font-size: 30px;
+  font-family: arial black;
+  color: #1d2731;
+}
+      
+#corpo2{
+  background-color:#E6E6FA;
+  width: 100%;
+  height: 1000px;
+} 
+
+#conteudo{
+  width: 100%;
+  height: 1000px;
+}
+
+#img2{
+  width: 370px;
+  height: 400px;
+}
+
+.recuo {
+  text-indent:4em 
+}
+
+ /* Rodapé */
+
+#footer{
+  position: relative;
+  bottom: 0;
+  background-color:#02090F;
+  width: 100%;
+  height: 400px;
+  margin-top: 90px;
+}
+
+#contato{
+  margin-left: 13%;
+  margin-top: 45px;
+  float:left;
+  width: 30%;    
+}
+
+#sobre{
+  margin-right: 10px;
+  margin-top: 50px;
+  float:right;
+  width: 30%;        
+}
+
+#table_footer{
+  margin-top: 75px;
+  float: left;
+  width: 25%;
+  height: 150px; 
+}
+
+td{
+  padding: 20px;
+}
+
+#h1{
+  font-size: 48px;
+  color: #066a75;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+h4{
+  color:white;
+}
+
+label{
+  color: #405c60;
+}
+
+/* Estilo do input */
+/* Placeholder */
+::-webkit-input-placeholder  {
+  color: #bebcbc; 
+  font-style: italic;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+  color: #bebcbc;
+  font-style: italic;
+}
+
+input {
+  outline: none;
+}
+
+input:not([type="checkbox"]){
+  width: 450px;
+  margin-top: 4px;
+  padding: 10px;    
+  border: 1px solid #b2b2b2;
+}
+
+/*Estilo do botão submit */
+input[type="submit"]{
+  width: 450px;
+  cursor: pointer;  
+  background: #3d9db3;
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 20px;  
+  border: 1px solid #fff;   
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+  border-radius: 5px;  
+}
+
+input[type="submit"]:hover{
+  background: #4ab3c6;
+}
+
+input[type="radio"]{
+  margin: auto;
+  cursor: pointer;    
+}
+
+#span{
+  color:#4ab3c6;
+}
+
+/* estilos para para os formulários */
+#cadastro{
+  margin:auto;
+  top: 30px;
+  width: 450px;   
+  padding: 18px 6% 10px 6%;
+  background: rgb(247, 247, 247);
+  border: 1px solid rgba(147, 184, 189,0.8);
+  border-radius: 5px;
+}
+       
+#login{
+  margin:auto;
+  top: 30px;
+  width: 450px;   
+  padding: 18px 6% 60px 6%;
+  background: rgb(247, 247, 247);
+  border: 1px solid rgba(147, 184, 189,0.8);
+  border-radius: 5px;
+}
+
+/* Cards */
+
+#card1{
+  display: block;
+  height: 400px;
+  max-width: 100%;
+}
+
+#card2{
+  display: block;
+  height: 400px;
+  max-width: 100%;
+}
+
+#card3{
+  height: 400px;
+  max-width: 100%;
+  display: block;
+}
+
+
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 3px; 
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+    /* Add some padding inside the card container */
+.container {
+  padding: 2px 16px 5px;
+  text-align: center;  
+}
+
+.cursos:hover{
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
