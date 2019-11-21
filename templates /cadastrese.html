@@ -1,0 +1,192 @@
+<html>
+
+	<head>
+
+	 	<title> Cadastre-se </title>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="../_imagens/icone.png"/>
+		<link rel="stylesheet" type="text/css" href="../_css/css.css"/ >
+		<script src="../_js/code.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id = "site">	
+
+			<header>
+
+				<!-- Imagem do cabeçalho -->
+				<div id = "cabecalho">
+
+					<div id = "img" align = "center">
+
+						<img src = "../_imagens/logo.png" style = "width: 165px;height:70px"/>
+
+					</div>
+
+				</div>
+
+				<!-- Conteúdo do cabeçalho -->
+				<div id = "cabecalho_2" >
+
+					<nav class = "menu">
+
+						<ul>
+						<li style = "margin-top:8px"> <a href = "../index.html"> <span> HOME </span> </a>
+						<ul>
+						</ul> </li>
+
+
+						<li style = "margin-top:8px"> <span> CURSOS </span> 
+						<ul>
+						<li><a href = "../_paginas/logica.html"> <span> ALGORITMOS </span> </a> </li><br/>
+						<li> <a href = "../_paginas/sistemas.html"> <span> SISTEMAS OPERACIONAIS </span> </a> </li><br/>
+						<li> <a href = "../_paginas/web.html"> <span> WEB DESIGN </span> </a> </li><br/>
+						</ul> </li>
+
+						<li style = "margin-top:8px"> <a href = "../_paginas/login.html"> <span> LOGIN <span> </a> </li>
+						<li style = "margin-top:8px"> <a href = "../_paginas/cadastrese.html"> <span> CADASTRE-SE </span> </a></li>
+						</ul>
+
+					</nav>
+
+					<div id = "divBusca" >
+							
+  						<img src="../_imagens/search.png" alt="Buscar..."/>
+  						<input type="text" id="txtBusca" placeholder="Buscar..."/>
+ 						<button id="btnBusca" onclick='alert("Pesquisa realizada!")'>Buscar</button>
+							
+					</div>
+
+				</div>
+
+			</header>
+	  
+	      	<br/>
+	      	<br/>
+	      	<br/>
+	      	<br/>
+
+	      	<!-- Formulário -->
+	       	<div id="cadastro">
+
+		        <form method="post" action=""> 
+
+			        <h1 id = "h1">Cadastro</h1> 
+			          
+			        <p id = "p"> 
+
+			            <label>Seu nome</label><br/>
+			            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Daniel" />
+
+			        </p>
+			          
+			        <p id = "p"> 
+
+			            <label>Seu e-mail</label><br/>
+			            <input id="email_cad" required="required" type="email" placeholder="exemplo@hotg.com"/> 
+
+			        </p>
+
+			        <p id = "p"> 
+
+			            <label>Data de nascimento</label><br/>
+			            <input id="data_nasc" required="required" type="date"/> 
+
+			        </p>
+
+			           
+			        <label>Sexo</label><br/><br/><br/>
+			            
+		            <tr><td><label>Masculino</label></td><td><input id="sexo" name = "sexo" required="required" type="radio" value="" style="margin-top: 2" /></td></tr>
+			  		<tr><td><label>Feminino</label></td><td><input id="sexo2" name = "sexo" required="required" type="radio" value="" /></td></tr>
+			       
+			        <p id = "p"> 
+
+			            <label>Confirme seu e-mail</label><br/>
+			            <input id="Cemail_cad" required="required" type="email" placeholder="exemplo@hotg.com"/>
+
+			        </p>
+			          
+			        <p id = "p"> 
+
+			            <label >Sua senha</label><br/>
+			            <input id="senha_cad" required="required" type="password" placeholder="********"/>
+
+	   	            </p>
+
+		            <p id = "p"> 
+
+			            <label>Confirme sua senha</label><br/>
+			            <input id="Csenha_cad" required="required" type="password" placeholder="********"/> 
+
+			        </p>
+			          
+			        <p id = "p"> 
+
+			            <input type="submit" id ="cadastrar" onclick="validacao()" value="submit"/> 
+
+			        </p>
+			          
+			        <p id = "p">  
+
+			            Já tem conta?
+			      	    <a href = "../_paginas/login.html"> <span id = "span"> Ir para Login </span></a>
+
+			        </p>
+
+		        </form>
+
+	      	</div>
+
+	      	<br/>
+	   
+	   		<!-- Rodapé -->
+	     	<div id = "footer">
+
+				<div style = "width:75%; height: 300px; margin: auto">
+
+					<div id = "table_footer">
+
+						<table>
+
+							<tr> <td><a href = "https://www.facebook.com/"><img src = "../_imagens/facebook-icon.png"/></a> </td> <td> <a href = "https://twitter.com/"><img src = "../_imagens/twitter-icon.png"/></a> </td> </tr>
+							<tr> <td> <a href = "https://www.youtube.com/"><img src = "../_imagens/youtube-icon.png"/></a> </td> <td> <a href = "https://www.instagram.com/"><img src = "../_imagens/instagram-icon.png"/> </a> </td></tr>
+
+						</table>
+
+					</div>
+
+					<div id = "contato">
+
+						<h4>ENTRE EM CONTATO:</h4>
+
+						<li> <span> Email: virtualteaching@gmail.com </span> <br/> <br/>
+						<li> <span> Celular: (77) 99999-9999 </span> <br/> <br/>
+						<li> <a href = "../_paginas/sugestao.html"><span>Sugestões</span></a></li><br/>
+						<li> <a href = "../_paginas/perguntas.html"><span>Perguntas Frequentes</span></a></li><br/>
+						<li> <a href = "../_paginas/reclamacoes.html"><span>Reclamações</span></a></li><br/>
+
+					</div>
+
+					<div id = "sobre" >
+
+						<img src = "../_imagens/logo.png" style = "width: 165px;height: 70px; display: block;margin-left: auto; margin-right: auto;"/><br/> <br/> 
+							
+						<li style="text-align: center; font-size: 14px"> <span> O Virtual Teaching é um site </span> </li><br/> 
+						<li style="text-align: center; font-size: 14px"> <span> construído por alunos do Ensino Médio </span> </li><br/>
+						<li style="text-align: center; font-size: 14px"> <span> com o intuito de ajudar os iniciantes </span></li> <br/>
+						<li style="text-align: center; font-size: 14px"> <span> da área da informática. </span></li> <br/>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>	
+	
+</html>

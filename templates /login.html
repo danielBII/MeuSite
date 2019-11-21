@@ -1,0 +1,164 @@
+<html>
+
+	<head>
+
+	 	<title> Login </title>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="../_imagens/icone.png"/>
+		<link rel="stylesheet" type="text/css" href="../_css/css.css"/>
+
+	</head>
+
+	<body>
+
+		<div id = "site">	
+
+			<header>
+
+				<!-- Imagem do cabeçalho -->
+				<div id = "cabecalho">
+
+					<div id = "img" align = "center">
+
+						<img src = "../_imagens/logo.png" style = "width: 165px;height:70px"/>
+
+					</div>
+
+				</div>
+
+				<!-- Conteúdo do cabeçalho -->
+				<div id = "cabecalho_2" >
+
+					<nav class = "menu">
+
+						<ul>
+						<li style = "margin-top:8px"> <a href = "../index.html"> <span> HOME </span> </a>
+						<ul>
+						</ul> </li>
+
+
+						<li style = "margin-top:8px"> <span> CURSOS </span> 
+						<ul>
+						<li><a href = "../_paginas/logica.html"> <span> ALGORITMOS </span> </a> </li><br/>
+						<li> <a href = "../_paginas/sistemas.html"> <span> SISTEMAS OPERACIONAIS </span> </a> </li><br/>
+						<li> <a href = "../_paginas/web.html"> <span> WEB DESIGN </span> </a> </li><br/>
+						</ul> </li>
+
+						<li style = "margin-top:8px"> <a href = "../_paginas/login.html"> <span> LOGIN <span> </a> </li>
+						<li style = "margin-top:8px"> <a href = "../_paginas/cadastrese.html"> <span> CADASTRE-SE </span> </a></li>
+						</ul>
+
+					</nav>
+
+					<div id = "divBusca" >
+							
+  						<img src="../_imagens/search.png" alt="Buscar..."/>
+  						<input type="text" id="txtBusca" placeholder="Buscar..."/>
+ 						<button id="btnBusca" onclick='alert("Pesquisa realizada!")'>Buscar</button>
+							
+					</div>
+
+				</div>
+
+			</header>
+				
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+
+			<!-- Formulário -->
+		    <div id="login">
+
+		        <form method="post" action=""> 
+
+		          	<h1 id = "h1">Login</h1>
+
+		          	<p>
+
+		            	<label for="email_login">Seu e-mail</label><br/>
+		            	<input id="email_login" name="email_login" required="required" type="text" placeholder="exemplo@hotg.com"/>
+
+		          	</p>
+		          
+		          	<p> 
+
+		            	<label for="senha_login">Sua senha</label><br/>
+		            	<input id="senha_login" name="senha_login" required="required" type="password" placeholder="*******" /> 
+
+		         	</p>
+		          
+		          	<p> 
+
+		            	<input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+		            	<label for="manterlogado">Manter-me logado</label>
+
+		          	</p>
+		          
+		          	<p> 
+
+		            	<input type="submit" value="Logar" onclick='alert("Login realizado com sucesso!")' /> 
+
+		          	</p>
+		          
+		          	<p>
+
+		           		Ainda não tem conta?
+		            	<a href = "../_paginas/cadastrese.html"><span id = "span">Cadastre-se </span></a>
+
+		         	</p>
+
+		        </form>
+
+	   		</div>
+
+	   		<br/>
+
+			<!-- Rodapé -->	   		
+	   		<div id = "footer">
+
+				<div style = "width:75%; height: 300px; margin: auto">
+
+					<div id = "table_footer">
+
+						<table>
+
+							<tr> <td><a href = "https://www.facebook.com/"><img src = "../_imagens/facebook-icon.png"/></a> </td> <td> <a href = "https://twitter.com/"><img src = "../_imagens/twitter-icon.png"/></a> </td> </tr>
+							<tr> <td> <a href = "https://www.youtube.com/"><img src = "../_imagens/youtube-icon.png"/></a> </td> <td> <a href = "https://www.instagram.com/"><img src = "../_imagens/instagram-icon.png"/> </a> </td></tr>
+
+						</table>
+
+					</div>
+
+					<div id = "contato">
+
+						<h4>ENTRE EM CONTATO:</h4>
+
+						<li> <span> Email: virtualteaching@gmail.com </span> <br/> <br/>
+						<li> <span> Celular: (77) 99999-9999 </span> <br/> <br/>
+						<li> <a href = "../_paginas/sugestao.html"><span>Sugestões</span></a></li><br/>
+						<li> <a href = "../_paginas/perguntas.html"><span>Perguntas Frequentes</span></a></li><br/>
+						<li> <a href = "../_paginas/reclamacoes.html"><span>Reclamações</span></a></li><br/>
+
+					</div>
+
+					<div id = "sobre" >
+
+						<img src = "../_imagens/logo.png" style = "width: 165px;height: 70px; display: block;margin-left: auto; margin-right: auto;"/><br/> <br/> 
+							
+						<li style="text-align: center; font-size: 14px"> <span> O Virtual Teaching é um site </span> </li><br/> 
+						<li style="text-align: center; font-size: 14px"> <span> construído por alunos do Ensino Médio </span> </li><br/>
+						<li style="text-align: center; font-size: 14px"> <span> com o intuito de ajudar os iniciantes </span></li> <br/>
+						<li style="text-align: center; font-size: 14px"> <span> da área da informática. </span></li> <br/>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>	
+	
+</html>
